@@ -52,7 +52,7 @@ import instagram from "./instagram.png";
 import linkedin from "./linkedin.png";
 import telegram from "./telegram.png";
 import twitter from "./twitter.png";
-import yonaspic from "./selamu.png";
+import yonaspic from "./selamu1.png";
 
 export {
   eyea,

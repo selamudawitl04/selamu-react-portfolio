@@ -36,6 +36,7 @@ import {
   a2sv,
   eyea,
   hahujobs,
+  service
 } from "../assets";
 
 export const socialLinks = [
@@ -86,83 +87,8 @@ export const navLinks = [
   },
 ];
 
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React  Developer",
-    icon: web,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Vue  Developer",
-    icon: web,
-  },
-];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Vue js",
-    icon: vue,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
+
 
 const experiences = [
   {
@@ -444,6 +370,68 @@ const projects = [
     source_code_link:
       "https://github.com/selamudawitl04/mnab-movie-schedule-frontend",
     web_link: "https://solflx.vercel.app/",
+  },
+];
+
+
+const technologies = [
+
+  { name: "React", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" },
+  { name: "Svelte", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/svelte/svelte-original.svg" },
+  { name: "Vue.js", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" },
+  { name: "Angular", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg" },
+  { name: "Next.js", icon: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" },
+  { name: "Node.js", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" },
+  { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" },
+  { name: "Golang", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" },
+  { name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" },
+  { name: "Django", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg" },
+  { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" },
+  { name: "Tailwind CSS", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
+  { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+  { name: "Ionic", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg" },
+  { name: "MySQL", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" },
+  { name: "PostgreSQL", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" },
+  { name: "MongoDB", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" },
+  { name: "Firebase", icon: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
+  { name: "Git", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" },
+  { name: "Docker", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" },
+  { name: "Kubernetes", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" },
+  { name: "Python", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" },
+  { name: "JavaScript", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" },
+  { name: "TypeScript", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" },
+];
+
+const services = [
+  {
+    title: "Application Development",
+    description: "Developing and deploying mobile applications for Android and iOS.",
+    icon: "📱",
+  },
+  {
+    title: "Software Consulting",
+    description: "Delivering expert software consulting services for optimal solutions.",
+    icon: "💼",
+  },
+  {
+    title: "Web Application Development",
+    description: "Designing & developing high-performance web applications.",
+    icon: "💻",
+  },
+  {
+    title: "AI & Robotics Solution",
+    description: "AI chatbots, model development, and robotics solutions.",
+    icon: "🤖",
+  },
+  {
+    title: "Software & App Deployment",
+    description: "Efficient deployment for your software and mobile applications.",
+    icon: "🚀",
+  },
+  {
+    title: "Software Maintenance & Support",
+    description: "Performance monitoring, proactive optimization, and fast issue resolution.",
+    icon: "🛠️",
   },
 ];
 

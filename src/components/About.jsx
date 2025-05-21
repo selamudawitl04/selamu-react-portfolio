@@ -36,36 +36,48 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <p className={styles.sectionSubText}>About Me</p>
+        <h2 className={styles.sectionHeadText}>This is me</h2>
       </motion.div>
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 leading-[30px] flex flex-col lg:flex-row lg:h-[300px]"
+        className="mt-4 leading-[30px] flex flex-col lg:flex-row"
       >
         <img
           src={yonaspic}
           alt=""
-          className="lg:mx-0 md:mx-20 rounded-xl object-contain shadow-card"
+          className="lg:mx-0 md:mx-20 rounded-xl object-contain shadow-card w-[420px]  h-full"
         />
-        <p className="text-secondary text-[17px] lg:ml-12 lg:mt-0 mt-8">
-          I am a full stack developer with a passion for creating beautiful and
-          functional websites. I have experience working with React,Vue, Node,
-          and MongoDB, Postgresql, and Flutter. I am currently working on a
-          project that uses the MERN and MEVN stack and I am looking for
-          opportunities to expand my knowledge and skills. if you have any
-          questions or would like to work together, please feel free to contact
-          me.|
-          <span className="text-violet-400">+251904823272</span>
-        </p>
+        <div className="flex flex-col lg:ml-12 lg:mt-0 mt-8">
+          <h3 className="text-[#38bdf8] text-xl font-semibold mb-2 italic">Experienced Designer & Developer who can provide your business a new creative start right a Way!</h3>
+          <p className="text-secondary text-[17px] mb-4">
+            I am a passionate, detail-oriented & committed individual with strong problem-solving capability, time management skills, and organizational skills.<br/><br/>
+            I have successfully designed, developed, and deployed various web and  mobile applications , following clean coding practices in a test-driven development framework. With a deep passion for and top-notch expertise in web and app development, I am well-prepared to be a valuable asset to your team.<br/><br/>
+            <span className="text-violet-400">Turning ideas into clean code and problems into innovative solutions.</span>
+          </p>
+          <div className="flex gap-10 text-center mt-4">
+            <div>
+              <span className="text-white text-4xl font-bold">40+</span>
+              <div className="text-blue-400 text-sm">Project Done</div>
+            </div>
+            <div>
+              <span className="text-white text-4xl font-bold">4+</span>
+              <div className="text-blue-400 text-sm">Years Experience</div>
+            </div>
+            <div>
+              <span className="text-white text-4xl font-bold">20+</span>
+              <div className="text-blue-400 text-sm">Happy Clients</div>
+            </div>
+          </div>
+        </div>
       </motion.div>
 
-      <div className="mt-20 flex flex-wrap gap-10 justify-center">
+      {/* <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };

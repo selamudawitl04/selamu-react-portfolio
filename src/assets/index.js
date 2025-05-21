@@ -53,6 +53,7 @@ import linkedin from "./linkedin.png";
 import telegram from "./telegram.png";
 import twitter from "./twitter.png";
 import yonaspic from "./selamu1.png";
+import service from "./service.png";
 
 export {
   eyea,
@@ -100,4 +101,5 @@ export {
   plan,
   minabIcon,
   a2sv,
+  service,
 };

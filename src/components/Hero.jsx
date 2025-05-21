@@ -22,35 +22,10 @@ const Hero = () => {
                 className={`text-base mt-2 w-[600px] text-secondary capitalize`}
               >
                 <span className="text-[#915eff] font-medium">
-                  Full-Stack Developer
+                  Experienced Designer & Developer
                 </span>{" "}
-                with experience in{" "}
-                <span className="text-[#915eff]">React.js, Vue.js, Go,</span>{" "}
-                and various technologies. Proven ability to collaborate in
-                teams, build responsive web applications
+                who can provide your business a new creative start right away! Welcome! Make yourself at home as you explore. I'm a highly skilled Full Stack and Mobile App developer with a proven track record of tackling diverse and challenging projects. I excel in delivering seamless solutions tailored to your needs. From sleek mobile apps to robust web solutions, count on me as your trusted partner for Web and App Development. Turning ideas into clean code and problems into innovative solutions.
               </p>
-            </div>
-            <div className="flex gap-x-12">
-              <a
-                href="#projects"
-                className="p-[1px] green-pink-gradient rounded-lg hover:transform hover:translate-y-[-4px] transition-all ease-in-out duration-75 hover:shadow-md"
-              >
-                <button className="flex items-center px-8 py-4 text-xl rounded-lg gap-x-4 w-fit bg-tertiary ">
-                  <Icon icon="grommet-icons:projects" className="text-base" />
-                  <span>Projects</span>
-                </button>
-              </a>
-
-              <a
-                href="https://drive.google.com/file/d/1Z7Kak6ysz-A0ERl6ONPrT6dBaXpRzUji/view?usp=sharing"
-                target="_blank"
-                className="p-[1px] 	text-xl rounded-lg hover:transform hover:translate-y-[-4px] transition-all ease-in-out duration-75 hover:shadow-md"
-              >
-                <button className="flex items-center px-8 py-4 text-xl rounded-lg gap-x-4 w-fit  text-black bg-[#a2a9ff]">
-                  <Icon icon="simple-icons:readdotcv" className="text-2xl" />
-                  <span>View Resume</span>
-                </button>
-              </a>
             </div>
           </div>
           <div className="p-[2px] green-pink-gradient rounded-[20px]">

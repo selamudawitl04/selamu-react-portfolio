@@ -1,76 +1,64 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
-
-import "react-vertical-timeline-component/style.min.css";
-
+import React from "react";
+import { experiences, education } from "../constants";
 import { styles } from "../styles";
-import { experiences } from "../constants";
 import SectionWrapper from "../hoc";
-import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
-  return (
-    <VerticalTimelineElement
-      contentStyle={{ background: "#1d1836", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
-      icon={
-        <div className="flex items-center justify-center w-full h-full">
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
-          />
+const TimelineList = ({ data }) => (
+  <div className="space-y-8 relative pl-6 border-l border-dotted border-cyan-500">
+    {data.map((item, idx) => (
+      <div key={idx} className="relative group">
+        {/* Yellow dot - changes color and scales on card hover */}
+        <div className="absolute -left-8 top-0 w-4 h-4 rounded-full border-2 border-white z-10 bg-[#915eff] transition-all duration-300 group-hover:bg-cyan-400 group-hover:scale-110" />
+
+        {/* Card */}
+        <div className="border-2 border-dotted border-cyan-500 p-4 rounded-md bg-[#131e33] transition duration-300 group-hover:shadow-md group-hover:border-solid">
+          <p className="text-sm text-gray-400 mb-1">{item.date}</p>
+          <h3 className="text-lg font-bold text-white">{item.title}</h3>
+          {(item.company_name || item.subtitle) && (
+            <p className="text-cyan-300 font-semibold text-sm mb-1">
+              {item.company_name || item.subtitle}
+            </p>
+          )}
+          {item.location && (
+            <p className="text-sm text-gray-300 mb-2">{item.location}</p>
+          )}
+          {item.points && (
+            <ul className="list-disc text-gray-200 text-sm ml-4 space-y-1">
+              {item.points.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
+          )}
         </div>
-      }
-    >
-      <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-        <a
-          href={experience.website}
-          target="_blank"
-          className="text-secondary text-[16ax] font-semibold cursor-pointer hover:underline"
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </a>
       </div>
+    ))}
+  </div>
+);
 
-      <ul className="mt-5 ml-5 space-y-2 list-disc">
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider"
-          >
-            {point}
-          </li>
-        ))}
-      </ul>
-    </VerticalTimelineElement>
-  );
-};
-
-const Experience = () => {
+const ExperienceSection = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
+    <section className="bg-[#0f1b2a] py-16 px-6 md:px-20 text-white">
+      <div className="text-center mb-12">
         <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience</h2>
-      </motion.div>
-
-      <div className="flex flex-col mt-20">
-        <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
-          ))}
-        </VerticalTimeline>
+        <h2 className={styles.sectionHeadText}>Experience & Education</h2>
       </div>
-    </>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h3 className="text-xl font-semibold text-cyan-300 mb-4">
+            Work Experience
+          </h3>
+          <TimelineList data={experiences} />
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold text-cyan-300 mb-4">
+            Education
+          </h3>
+          <TimelineList data={education} />
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(ExperienceSection, "experience");

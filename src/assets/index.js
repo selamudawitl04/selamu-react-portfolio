@@ -44,8 +44,10 @@ import plan from "./plan.png";
 import eyea from "./eyea.png";
 import solflx from "./solflx.png";
 import hahujobs from "./hahu-jobs.png";
-
+import mezmure from "./mezmure.png";
+import aladia from "./aladia.jpg";
 import tarixchi from "./tartxchi.png";
+import vascom from "./vascom.png";
 
 /*-------------------social icons-------------------*/
 import instagram from "./instagram.png";
@@ -102,4 +104,7 @@ export {
   minabIcon,
   a2sv,
   service,
+  mezmure,
+  aladia,
+  vascom,
 };

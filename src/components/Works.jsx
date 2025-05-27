@@ -26,29 +26,35 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full flex flex-col justify-between"
       >
-        <div
-          className="relative w-full h-[230px] shadow-card cursor-pointer"
-          onClick={() => window.open(web_link, "_blank")}
+        <a
+          href={web_link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative w-full h-[230px] shadow-card cursor-pointer block"
         >
           <img
             src={image}
             alt={name}
-            className="object-cover w-full h-full rounded-2xl "
+            className="object-cover w-full h-full rounded-2xl"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer green-pink-gradient"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="object-contain w-1/2 h-1/2"
-              />
-            </div>
+            {source_code_link && (
+              <a
+                href={source_code_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer green-pink-gradient"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="object-contain w-1/2 h-1/2"
+                />
+              </a>
+            )}
           </div>
-        </div>
+        </a>
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
@@ -83,10 +89,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Here are some of my projects. I have worked on a lot of projects which
-          you can find on my github profile. each project has a link to the
-          github repository and a link to the live site. it reflects my skills
-          and experience. works with different technologies and frameworks.
+          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with its key features and technologies used. Some projects include links to live demos and source code repositories where available. These projects demonstrate my ability to solve complex problems, work with different technologies, and manage projects effectively.
         </motion.p>
       </div>
 
